@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import  { useEffect, useState } from 'react';
 import { io } from 'socket.io-client';
 const socket = io('http://localhost:3001');
 
@@ -30,7 +30,7 @@ function App() {
     };
   }, []);
 
-  const handleClick = (index) => {
+  const handleClick = (index:any) => {
     if (!isMyTurn || board[index]) return;
     const newBoard = [...board];
     const symbol = player === 1 ? 'X' : 'O';
