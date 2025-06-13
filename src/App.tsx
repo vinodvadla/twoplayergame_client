@@ -1,6 +1,6 @@
 import  { useEffect, useState } from 'react';
 import { io } from 'socket.io-client';
-const socket = io('https://twoplayergame-server.vercel.app');
+const socket = io('https://twoplayergame-server.onrender.com');
 
 function App() {
   const [player, setPlayer] = useState(null);
